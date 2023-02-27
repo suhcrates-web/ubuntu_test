@@ -4,7 +4,7 @@ import time, timeit
 r = redis.Redis(host='localhost', port=6379)
 
 start0 = time.time()
-for _ in range(2000):
+for _ in range(10000):
     start = timeit.default_timer()
     r.set('1','44')
     val = r.get('1')

@@ -5,7 +5,7 @@ import timeit
 
 
 start0 = time.time()
-for _ in range(2000):
+for _ in range(10000):
     start = timeit.default_timer()
     cursor.execute(
         """
